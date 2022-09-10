@@ -107,4 +107,4 @@ avdmanager list
 avdmanager -s create avd -n nama_emulator -k "system-images;android-30;google_apis;x86_64" -d id_device
 ```
 ### 9. Selesai
-- Download `Flutter` extension untuk VSCode (`Dart extension otomatis terinstall`)
+- Download `Flutter` extension untuk VSCode (`Dart` extension otomatis terinstall)
