@@ -1,4 +1,4 @@
-# flutter-development-environment (Ubuntu 22.04.1 LTS) *update September 2022*
+# Install Flutter tanpa Android Studio (Ubuntu 22.04.1 LTS) *update September 2022*
 Step by step instalasi Flutter + VSCode
 Credits to [aantamim.id](https://aantamim.id/flutter-install-tanpa-android-studio-ubuntu/)
 
@@ -85,3 +85,26 @@ sdkmanager "build-tools;30.0.2"
 sdkmanager --licenses
 ```
 ### 8. Konfigurasi SDK Path untuk Flutter
+- Ketik command:
+```shell
+flutter config --android-sdk ~/Android
+```
+- Jalankan command `flutter doctor`
+```shell
+flutter doctor -v
+```
+- Kemudian jalankan command berikut untuk menyetujui lisensi
+```shell
+flutter doctor --android-licenses
+```
+### 9. Membuat emulator
+- Ketikkan command di bawah untuk melihat daftar device, pilih satu dan salin ID device
+```shell
+avdmanager list
+```
+- Beri nama pada emulator yang akan dibuat dan paste ID device ke baris kode berikut:
+```shell
+avdmanager -s create avd -n nama_emulator -k "system-images;android-30;google_apis;x86_64" -d id_device
+```
+### 10. Selesai
+- Download `Flutter` extension untuk VSCode (`Dart extension otomatis terinstall`)
