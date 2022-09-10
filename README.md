@@ -14,7 +14,7 @@ sudo apt update && sudo apt upgrade
 sudo apt install openjdk-11-jre
 sudo apt install openjdk-11-jdk
 ```
-### 3. Membuat direktori `Android`
+### 2. Membuat direktori `Android`
 - Buat direktori Android di Home
 ```shell
 cd
@@ -22,7 +22,7 @@ mkdir Android
 cd Android/
 mkdir cmdline-tools
 ```
-### 4. Instalasi Flutter SDK dan Android Command Line Tools
+### 3. Instalasi Flutter SDK dan Android Command Line Tools
 - [Download Flutter SDK](https://docs.flutter.dev/get-started/install/linux#install-flutter-manually)
 - Extract file kemudian pindahkan folder `flutter` ke direktori Android
 ```shell
@@ -36,7 +36,7 @@ sudo mv latest/ ~/Android/cmdline-tools/
 ```
 - [Dokumentasi `sdkmanager`](https://developer.android.com/studio/command-line/sdkmanager)
 - [Dokumentasi `avdmanager`](https://developer.android.com/studio/command-line/avdmanager)
-### 5. Struktur direktori `Android`
+### 4. Struktur direktori `Android`
 - Sejauh ini struktur direktori Android menjadi:
 ```shell
 Android/
@@ -44,7 +44,7 @@ Android/
      cmdline-tools/
           latest/
 ```
-### 6. Set PATH
+### 5. Set PATH
 - Copy dan paste baris kode ini ke baris paling akhir file .bashrc
 ```shell
 # Android
@@ -65,7 +65,7 @@ export PATH=$FLUTTER/bin:$PATH
 ```shell
 source ~/.bashrc
 ```
-### 7. Instalasi Android SDK
+### 6. Instalasi Android SDK
 - Untuk melihat versi dari `system-images`, `platforms;android`, `platform-tools`, `patcher`, `emulator`, `build-tools`, ketik command berikut:
 ```shell
 cd Android/cmdline-tools/tools
@@ -84,7 +84,7 @@ sdkmanager "build-tools;30.0.2"
 ```shell
 sdkmanager --licenses
 ```
-### 8. Konfigurasi SDK Path untuk Flutter
+### 7. Konfigurasi SDK Path untuk Flutter
 - Ketik command:
 ```shell
 flutter config --android-sdk ~/Android
@@ -97,7 +97,7 @@ flutter doctor -v
 ```shell
 flutter doctor --android-licenses
 ```
-### 9. Membuat emulator
+### 8. Membuat emulator
 - Ketikkan command di bawah untuk melihat daftar device, pilih satu dan salin ID device
 ```shell
 avdmanager list
@@ -106,5 +106,5 @@ avdmanager list
 ```shell
 avdmanager -s create avd -n nama_emulator -k "system-images;android-30;google_apis;x86_64" -d id_device
 ```
-### 10. Selesai
+### 9. Selesai
 - Download `Flutter` extension untuk VSCode (`Dart extension otomatis terinstall`)
