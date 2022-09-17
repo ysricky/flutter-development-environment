@@ -1,6 +1,6 @@
 # Install Flutter tanpa Android Studio (Ubuntu 22.04.1 LTS) *update September 2022*
 Step by step instalasi Flutter + VSCode
-Credits to [aantamim.id](https://aantamim.id/flutter-install-tanpa-android-studio-ubuntu/)
+Credits to [Karan Singh](https://ksrk.medium.com/install-flutter-without-android-studio-on-ubuntu-a14a66a88f9f)
 
 ### 1. Install dependencies
 - Update Ubuntu
